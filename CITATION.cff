@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this implementation, please cite the accompanying paper."
+title: "T-ORR: Text-Anchored Orthogonal Residual Rectification for Robust Multimodal Sarcasm Detection"
+type: software
+authors:
+  - family-names: Chen
+    given-names: Qi
+  - family-names: Chen
+    given-names: Junyi
+  - family-names: Han
+    given-names: Jiabin
+  - family-names: Yang
+    given-names: Hongjiao
+version: 0.1.0
+date-released: 2026-09-22
+

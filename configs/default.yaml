@@ -1,0 +1,32 @@
+seed: 42
+device: auto
+
+model:
+  text_input_dim: 1024
+  audio_input_dim: 1024
+  video_input_dim: 1024
+  hidden_dim: 256
+  basis_rank: 32
+  attention_heads: 8
+  max_alignment_shift: 0.15
+  dropout: 0.10
+
+training:
+  batch_size: 32
+  epochs: 30
+  learning_rate: 1.0e-4
+  weight_decay: 1.0e-4
+  lambda_structure: 0.5
+  lambda_gate_sparsity: 0.1
+  early_stopping_patience: 5
+  decision_threshold: 0.5
+
+data:
+  train_file: data/train.pt
+  validation_file: data/validation.pt
+  test_file: data/test.pt
+
+output:
+  directory: checkpoints
+  checkpoint_name: best.pt
+

@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "t-orr"
+version = "0.1.0"
+description = "PyTorch implementation of Text-Anchored Orthogonal Residual Rectification for multimodal sarcasm detection"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+  {name = "Qi Chen"},
+  {name = "Junyi Chen"},
+  {name = "Jiabin Han"},
+  {name = "Hongjiao Yang"},
+]
+dependencies = [
+  "torch>=2.1",
+  "PyYAML>=6.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "ruff>=0.6"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
